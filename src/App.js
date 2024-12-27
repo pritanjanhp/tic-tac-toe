@@ -1,5 +1,4 @@
 import React from "react";
-import Game from "./component/Game";
 import Tictactoe0 from "./component/Tictactoe0";
 
 function App() {

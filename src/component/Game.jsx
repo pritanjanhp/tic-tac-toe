@@ -20,15 +20,21 @@ function Game() {
   }
 
   return (
-    <div className="game">
-      <div className="game-board">
-        <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+    <>
+      <h1>Tic-Tac-Toe Game</h1>
+      <div className="game">
+        <div className="game-board">
+          <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+        </div>
+        <div className="game-info">
+          <History history={history} currentMove={currentMove} jumpTo={jumpTo} />
+        </div>
       </div>
-      <div className="game-info">
-        <History history={history} currentMove={currentMove} jumpTo={jumpTo} />
-      </div>
-    </div>
+    </>
   );
 }
 
 export default Game;
+
+
+// App > game > board > square > history > moveButton

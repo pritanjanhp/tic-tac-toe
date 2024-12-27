@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Board from './Board';
-import History from './History'; // We will create this component
+import History from './History';
 
 function Game() {
   const [history, setHistory] = useState([Array(9).fill(null)]);
